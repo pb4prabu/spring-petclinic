@@ -15,8 +15,12 @@ cd spring-petclinic
 ./mvnw package
 java -jar target/*.jar
 ```
+Running with external sping configuration
+```
+java -jar target/*.jar  --spring.config.location=file:./externalFolder/properties/
+```
 
-You can then access petclinic at http://localhost:8080/
+You can then access petclinic at http://localhost:8080/ for external properties it is http://localhost:9090/
 
 <img width="1042" alt="petclinic-screenshot" src="https://cloud.githubusercontent.com/assets/838318/19727082/2aee6d6c-9b8e-11e6-81fe-e889a5ddfded.png">
 
